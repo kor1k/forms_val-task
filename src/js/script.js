@@ -20,7 +20,7 @@ function checkPass()
         return;
     }
 
-    if(pass1.value == pass2.value)
+    if(pass1.value === pass2.value)
     {
         pass2.style.backgroundColor = goodColor;
         message.style.color = goodColor;
