@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FORMS</title>
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+<div class="forms-wrapper">
+    <input name="password" type="password" placeholder="password" id="pass1" onkeyup="checkPass(); return false;"/>
+    <input name="repeatpassword" type="password" placeholder="confirm password" id="pass2"
+           onkeyup="checkPass(); return false;"/>
+    <div id="error-nwl"></div>
+</div>
+<script src="src/js/script.js"></script>
+</body>
+</html>
