@@ -56,33 +56,33 @@
     animation-fill-mode: both
 }
 
-.content-side-form__form-submit-btn {
-    /*display: flex;*/
-    /*justify-content: center;*/
-    /*width: 200px;*/
-    /*height: 70px;*/
-    /*font-size: 2rem;*/
-    background-color: white;
-    border-radius: 1rem;
-    border: 1px solid #1da7c0;
-    color: #aaa9a9;
-    margin-left: 1rem;
-    cursor: pointer;
-    animation: animation .5s;
-    animation-fill-mode: both
-}
+/*.content-side-form__form-submit-btn {*/
+/*    !*display: flex;*!*/
+/*    !*justify-content: center;*!*/
+/*    !*width: 200px;*!*/
+/*    !*height: 70px;*!*/
+/*    !*font-size: 2rem;*!*/
+/*    background-color: white;*/
+/*    border-radius: 1rem;*/
+/*    border: 1px solid #1da7c0;*/
+/*    color: #aaa9a9;*/
+/*    margin-left: 1rem;*/
+/*    cursor: pointer;*/
+/*    animation: animation .5s;*/
+/*    animation-fill-mode: both*/
+/*}*/
 
 
-.content-side-form__form-submit-btn.active {
-    /*display: flex;*/
-    /*width: 18rem;*/
-    /*height: 5rem;*/
-    background-color: #1da7c0;
-    /*border-radius: 1rem;*/
-    color: white;
-    /*border: 1px solid #1da7c0;*/
-    cursor: pointer;
-    margin-left: 1rem;
-    animation: animation .5s;
-    animation-fill-mode: both
-}
+/*.content-side-form__form-submit-btn.active {*/
+/*    !*display: flex;*!*/
+/*    !*width: 18rem;*!*/
+/*    !*height: 5rem;*!*/
+/*    background-color: #1da7c0;*/
+/*    !*border-radius: 1rem;*!*/
+/*    color: white;*/
+/*    !*border: 1px solid #1da7c0;*!*/
+/*    cursor: pointer;*/
+/*    margin-left: 1rem;*/
+/*    animation: animation .5s;*/
+/*    animation-fill-mode: both*/
+/*}*/

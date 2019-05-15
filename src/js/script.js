@@ -2,17 +2,32 @@ var arrLang = {
     'en': {
         'home': 'Home',
         'about': 'About',
-        'contacts': 'Contacts'
+        'contacts': 'Contacts',
+        'name-input': 'Your name',
+        'email-input': 'Email',
+        'pass-input': 'Password',
+        'terms-input': 'Terms and Condition',
+        'register-btn': 'Register'
     },
     'ru': {
         'home': 'Главная',
         'about': 'О нас',
-        'contacts': 'Контакты'
+        'contacts': 'Контакты',
+        'name-input': 'Ваше имя',
+        'email-input': 'Почта',
+        'pass-input': 'Пароль',
+        'terms-input': 'Соглашаясь с уловиями Вы подтверждаете...',
+        'register-btn': 'Зарегестрироваться'
     },
     'sp': {
         'home': 'Сasa',
         'about': 'Acerca de',
-        'contacts': 'Contacto'
+        'contacts': 'Contacto',
+        'name-input': 'Primer nombre',
+        'email-input': 'Correo electronico',
+        'pass-input': 'Contraseña',
+        'terms-input': 'Términos y Condiciones',
+        'register-btn': 'Registro'
     }
 };
 
