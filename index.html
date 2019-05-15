@@ -10,38 +10,26 @@
     <link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
-<!--<div class="forms-wrapper">-->
-<!--    <input name="password" type="password" placeholder="password" id="pass1" onkeyup="checkPass(); return false;"/>-->
-<!--    <input name="repeatpassword" type="password" placeholder="confirm password" id="pass2"-->
-<!--           onkeyup="checkPass(); return false;"/>-->
-<!--    <div id="error-nwl"></div>-->
-<!--</div>-->
-<button class="translate" id="en">English</button>
-<button class="translate" id="ru">Russian</button>
-<button class="translate" id="sp">Spanish</button>
-
-<!--<div>-->
-<!--    <div class="lang" key="home">Home</div>-->
-<!--    <div class="lang" key="about">About</div>-->
-<!--    <div class="lang" key="contacts">Contacts</div>-->
-<!--</div>-->
+<!--<button class="translate" id="en">English</button>-->
+<!--<button class="translate" id="ru">Russian</button>-->
+<!--<button class="translate" id="sp">Spanish</button>-->
 
 <div class="wrapper-form-fields">
     <form id="form-fields__inputs" class="content-side-form__form">
         <!--        <p class="form-checker lang">Заполните все поля</p>-->
-        <p class="lang" key="name-input">Your name</p>
+        <label class="lang" key="name-input">Your name</label>
         <input required class="content-side-form__form-name form-input" name="input_name" id="form_name"
                type="text"
                pattern="^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$"
                minlength="3">
         <!--               placeholder="Name"-->
-        <p class="lang" key="email-input">Email</p>
+        <label class="lang" key="email-input">Email</label>
         <!--pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}"-->
         <input class="content-side-form__form-email form-input" name="input_email" id="form_email"
                pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}"
                required
                type="email">
-        <p class="lang" key="pass-input">Password:</p>
+        <label class="lang" key="pass-input">Password</label>
         <!--        <input required class="content-side-form__form-pass form-input" name="input_pass" id="form_pass"-->
         <!--               type="password"-->
         <!--               minlength="6"-->
@@ -53,6 +41,7 @@
                id="form_pass1"
                required
                onkeyup="checkPass(); return false;"/>
+        <label class="lang" key="pass-confirm-input">Confirm password</label>
         <input name="repeatpassword"
                type="password"
                id="form_pass2"
@@ -67,6 +56,9 @@
              value="">Register</button>
     </form>
 </div>
+<script>
+    var widgetLanguage = "esp";
+</script>
 <script
         src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="

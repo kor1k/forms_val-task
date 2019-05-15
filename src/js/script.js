@@ -1,4 +1,4 @@
-var arrLang = {
+const arrLang = {
     'en': {
         'home': 'Home',
         'about': 'About',
@@ -6,6 +6,7 @@ var arrLang = {
         'name-input': 'Your name',
         'email-input': 'Email',
         'pass-input': 'Password',
+        'pass-confirm-input': 'Confirm password',
         'terms-input': 'Terms and Condition',
         'register-btn': 'Register'
     },
@@ -16,28 +17,28 @@ var arrLang = {
         'name-input': 'Ваше имя',
         'email-input': 'Почта',
         'pass-input': 'Пароль',
+        'pass-confirm-input': 'Подтвердите пароль',
         'terms-input': 'Соглашаясь с уловиями Вы подтверждаете...',
         'register-btn': 'Зарегестрироваться'
     },
-    'sp': {
+    'esp': {
         'home': 'Сasa',
         'about': 'Acerca de',
         'contacts': 'Contacto',
         'name-input': 'Primer nombre',
         'email-input': 'Correo electronico',
         'pass-input': 'Contraseña',
+        'pass-confirm-input': 'Confirmar contraseña',
         'terms-input': 'Términos y Condiciones',
         'register-btn': 'Registro'
     }
 };
 
 $(function () {
-    $('.translate').click(function () {
-        var lang = $(this).attr('id');
-
-        $('.lang').each(function (index, element) {
-            $(this).text(arrLang[lang][$(this).attr('key')]);
-        });
+    var lang = widgetLanguage.valueOf();
+    console.log('Current language is: ' + lang);
+    $('.lang').each(function (index, element) {
+        $(this).text(arrLang[lang][$(this).attr('key')]);
     });
 });
 
@@ -62,7 +63,7 @@ function checkPass() {
     if (pass1.value === pass2.value) {
         pass2.style.backgroundColor = goodColor;
         message.style.color = goodColor;
-        message.innerHTML = "ok!";
+        message.innerHTML = "Passwords are ok!";
     } else {
         pass2.style.backgroundColor = badColor;
         message.style.color = badColor;
@@ -71,7 +72,7 @@ function checkPass() {
 }
 
 $('#form-fields__inputs input').on('click keyup', function () {
-        console.log($('#form_checkbox').is(':checked'));
+        // console.log($('#form_checkbox').is(':checked'));
         if ($('#form_name').val() !== "" && $('#form_email').val() !== "" && $('#form_checkbox').is(':checked') == true && $('#form_pass1').val().length >= 6 && $('#form_pass2').val().length >= 6) {
             console.log($('#form_checkbox').is(':checked'));
             $('.content-side-form__form-submit-btn').addClass('active');
