@@ -38,6 +38,7 @@
     border-radius: 10px;
     border: 1px solid black;
     margin: 15px;
+    padding-left: 30px;
 }
 
 .form-checker {
@@ -56,11 +57,11 @@
 }
 
 .content-side-form__form-submit-btn {
-    display: flex;
-    justify-content: center;
-    width: 18rem;
-    height: 5rem;
-    font-size: 2rem;
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*width: 200px;*/
+    /*height: 70px;*/
+    /*font-size: 2rem;*/
     background-color: white;
     border-radius: 1rem;
     border: 1px solid #1da7c0;

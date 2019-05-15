@@ -1,9 +1,37 @@
+var arrLang = {
+    'en': {
+        'home': 'Home',
+        'about': 'About',
+        'contacts': 'Contacts'
+    },
+    'ru': {
+        'home': 'Главная',
+        'about': 'О нас',
+        'contacts': 'Контакты'
+    },
+    'sp': {
+        'home': 'Сasa',
+        'about': 'Acerca de',
+        'contacts': 'Contacto'
+    }
+};
+
+$(function () {
+    $('.translate').click(function () {
+        var lang = $(this).attr('id');
+
+        $('.lang').each(function (index, element) {
+            $(this).text(arrLang[lang][$(this).attr('key')]);
+        });
+    });
+});
+
 function checkPass() {
     var pass1 = document.getElementById('form_pass1');
     var pass2 = document.getElementById('form_pass2');
     var message = document.getElementById('error-nwl');
     var goodColor = "#66cc66";
-    var badColor = "#ff6666";
+    var badColor = "#ff8082";
 
     if (pass1.value.length > 5) {
         pass1.style.backgroundColor = goodColor;
